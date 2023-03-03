@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import {Observable} from "rxjs";
+import {CryptoInterface} from "../types/crypto.interface";
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +8,8 @@ import { Injectable } from '@angular/core';
 export class CryptoService {
 
   constructor() { }
+
+  getCrypto():Observable<CryptoInterface[]> {
+    return
+  }
 }
