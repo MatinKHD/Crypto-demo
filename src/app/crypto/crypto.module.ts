@@ -8,11 +8,13 @@ import {EffectsModule} from "@ngrx/effects";
 import {cryptoFeatureKey, reducers} from "./store/reducers";
 import {CryptoEffects} from "./store/effects";
 import {CryptoComponent} from "./crypto.component";
+import { CryptpListComponent } from './components/cryptp-list/cryptp-list.component';
 
 
 @NgModule({
   declarations: [
-    CryptoComponent
+    CryptoComponent,
+    CryptpListComponent
   ],
   imports: [
     CommonModule,
