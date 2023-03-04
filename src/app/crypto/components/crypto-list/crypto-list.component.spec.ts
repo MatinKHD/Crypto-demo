@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CryptpListComponent } from './cryptp-list.component';
+import { CryptpListComponent } from './crypto-list.component';
 
 describe('CryptpListComponent', () => {
   let component: CryptpListComponent;

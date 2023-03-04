@@ -1,15 +1,16 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 import {CryptoComponent} from "./crypto.component";
+import {CryptoListComponent} from "./components/crypto-list/crypto-list.component";
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     component: CryptoComponent,
     children: [
       {
         path: 'crypto-list',
-        component: ,
+        component: CryptoListComponent,
         pathMatch: "full"
       }
     ]
@@ -20,4 +21,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class CryptoRoutingModule { }
+export class CryptoRoutingModule {
+}
